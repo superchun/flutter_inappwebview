@@ -14,6 +14,7 @@ public class UserScript : WKUserScript {
 //    lazy var contentWorld: WKContentWorld = WKContentWorld.page
     
     var contentWorldWrapper: Any?
+    @available(iOS 14.0, *)
     var contentWorld: WKContentWorld {
         get {
             if let value = contentWorldWrapper as? WKContentWorld {
